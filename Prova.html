@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabalho para Prova TEC WEB 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="prova.css" />
+	<script src="jquery.min.js"></script>
+	<script src="javascript.js"></script>
+</script>
+</head>
+<body>
+
+	<form action="post.php" name="meuform" method="post">
+
+		<label for="nome">Nome: </label>
+		<input type="text" name="nome" placeholder="Digite seu nome" />
+		<br>
+		<label for="idade">Idade: </label>
+		<input type="text" name="idade" placeholder="Digite sua idade" />
+		<br>
+		
+		<p>Tem Filhos? </p>
+		
+		<label for="sim">Sim</label>
+		<input type="radio" name="tem_filhos" value="on" id="sim">
+		<br>
+		<label for="nao">Não</label>
+		<input type="radio" name="tem_filhos" value="off" id="nao">
+		
+		<br>
+		<button type="submit">Enviar</button>
+
+		<hr>
+
+		<div id="filhos" hidden></div>
+	</form>
+</body>
+</html>
